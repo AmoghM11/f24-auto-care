@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Cars, SUVs, Luxury & Superbikes | F24 Auto Care</title>
+<meta name="description" content="The F24 Auto Care portfolio — real PPF, ceramic coating and detailing work on cars, SUVs, luxury cars and superbikes in Bengaluru. Before & after transformations and customer deliveries.">
+<meta name="theme-color" content="#07070b">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:title" content="Portfolio | F24 Auto Care">
+<meta property="og:image" content="assets/img/f24-41.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<section class="phero">
+  <div class="phero__bg"><img src="assets/img/f24-35.jpg" alt="F24 Auto Care portfolio"></div>
+  <div class="container">
+    <div class="crumbs reveal in"><a href="index.html">Home</a> / <span>Portfolio</span></div>
+    <span class="eyebrow reveal in">The Garage · Real F24 Work</span>
+    <h1 class="h-display reveal in" style="max-width:16ch">The <span class="text-grad">Portfolio</span></h1>
+    <p class="lead reveal in" style="margin:1.2rem 0 0">Genuine work from the F24 Auto Care studio in Vijayanagar — daily drivers, SUVs, exotic luxury and track-bred superbikes. Tap any image to view it full-screen.</p>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">Transformations</span><h2 class="title">Before &amp; after</h2><p class="lead" style="margin-inline:auto">Drag each slider to reveal the F24 difference.</p></div>
+    <div class="grid grid-3">
+      <div class="reveal"><div class="ba"><img class="ba__before" src="assets/img/f24-15.jpg" alt="Before"><img class="ba__after" src="assets/img/f24-31.jpg" alt="After"><span class="ba__tag b">Before</span><span class="ba__tag a">After</span><div class="ba__handle"><div class="ba__grip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 4 12l4 5M16 7l4 5-4 5"/></svg></div></div></div></div>
+      <div class="reveal d1"><div class="ba"><img class="ba__before" src="assets/img/f24-08.jpg" alt="Before"><img class="ba__after" src="assets/img/f24-16.jpg" alt="After"><span class="ba__tag b">Before</span><span class="ba__tag a">After</span><div class="ba__handle"><div class="ba__grip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 4 12l4 5M16 7l4 5-4 5"/></svg></div></div></div></div>
+      <div class="reveal d2"><div class="ba"><img class="ba__before" src="assets/img/f24-14.jpg" alt="Before"><img class="ba__after" src="assets/img/f24-19.jpg" alt="After"><span class="ba__tag b">Before</span><span class="ba__tag a">After</span><div class="ba__handle"><div class="ba__grip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 4 12l4 5M16 7l4 5-4 5"/></svg></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTERABLE GALLERY -->
+<section class="section section--tight" style="background:var(--bg-2);border-block:1px solid var(--border)">
+  <div class="container">
+    <div class="section-head reveal" style="max-width:none"><span class="eyebrow">Full Gallery</span><h2 class="title">Browse the work</h2></div>
+    <div class="filters reveal d1">
+      <button class="filter active" data-filter="all">All Work</button>
+      <button class="filter" data-filter="cars">Cars</button>
+      <button class="filter" data-filter="suvs">SUVs</button>
+      <button class="filter" data-filter="luxury">Luxury Cars</button>
+      <button class="filter" data-filter="superbikes">Superbikes</button>
+      <button class="filter" data-filter="deliveries">Deliveries &amp; Studio</button>
+    </div>
+    <div class="gallery reveal d2" id="grid"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container"><div class="cta reveal"><img src="assets/img/f24-16.jpg" alt="">
+    <h2 class="title">Your car could be next.</h2>
+    <p class="lead">Book a slot at F24 Auto Care and join the gallery of head-turning finishes.</p>
+    <div class="cta__btns"><a href="contact.html" class="btn btn-primary btn-lg">Book Now</a><a id="waBtn2" href="#" class="btn btn-ghost btn-lg">WhatsApp Us</a></div>
+  </div></div>
+</section>
+
+<script src="assets/js/main.js"></script>
+<script>
+  // Authentic F24 gallery — category + caption per image
+  var ITEMS = [
+    {n:41,c:"superbikes",t:"Kawasaki Ninja",k:"Superbike PPF"},
+    {n:16,c:"luxury",t:"Sports Sedan",k:"Gloss Finish"},
+    {n:35,c:"superbikes",t:"KTM Duke",k:"Superbike Detail"},
+    {n:7, c:"suvs",t:"Mercedes SUV",k:"Detailing"},
+    {n:31,c:"luxury",t:"Black on Black",k:"Ceramic Coating"},
+    {n:24,c:"superbikes",t:"Green Machine",k:"Superbike PPF"},
+    {n:12,c:"suvs",t:"White SUV",k:"Full Detail"},
+    {n:6, c:"luxury",t:"Luxury Front",k:"PPF"},
+    {n:33,c:"superbikes",t:"KTM Orange",k:"Detailing"},
+    {n:20,c:"cars",t:"City Hatch",k:"Tint + Coat"},
+    {n:19,c:"luxury",t:"Executive Black",k:"Coating"},
+    {n:5, c:"suvs",t:"SUV Wheel & Stance",k:"Detail"},
+    {n:25,c:"superbikes",t:"Track Red",k:"Superbike PPF"},
+    {n:32,c:"luxury",t:"Mercedes",k:"Coating"},
+    {n:10,c:"suvs",t:"Red SUV",k:"Detailing"},
+    {n:9, c:"superbikes",t:"Cruiser Blue",k:"PPF"},
+    {n:21,c:"cars",t:"Silver Rear",k:"Detail"},
+    {n:14,c:"suvs",t:"Fortuner-Class",k:"Full Detail"},
+    {n:3, c:"superbikes",t:"Race Replica",k:"PPF"},
+    {n:36,c:"cars",t:"White Finish",k:"Detail"},
+    {n:18,c:"suvs",t:"Grey SUV",k:"Coating"},
+    {n:0, c:"superbikes",t:"Modern Classic",k:"Detail"},
+    {n:17,c:"cars",t:"Front Grille",k:"Restoration"},
+    {n:42,c:"superbikes",t:"Studio Bike",k:"PPF"},
+    {n:22,c:"cars",t:"Tinted Glass",k:"Window Tint"},
+    {n:11,c:"superbikes",t:"Retro Roadster",k:"Detail"},
+    {n:37,c:"cars",t:"Red Rear",k:"Detail"},
+    {n:2, c:"superbikes",t:"Night Rider",k:"PPF"},
+    {n:13,c:"cars",t:"Alloy Set",k:"Wheel Care"},
+    {n:4, c:"superbikes",t:"Dark Sport",k:"Detail"},
+    {n:30,c:"cars",t:"Red Caliper",k:"Wheel Detail"},
+    {n:23,c:"superbikes",t:"Blue Superbike",k:"PPF"},
+    {n:26,c:"deliveries",t:"In The Studio",k:"Workshop"},
+    {n:27,c:"deliveries",t:"Bay Work",k:"Workshop"},
+    {n:8, c:"deliveries",t:"PPF In Progress",k:"Application"},
+    {n:28,c:"deliveries",t:"Film Detail",k:"PPF"},
+    {n:34,c:"deliveries",t:"Wrapping",k:"PPF"},
+    {n:29,c:"deliveries",t:"Edge Tuck",k:"PPF"},
+    {n:15,c:"deliveries",t:"Detailing Bay",k:"Process"},
+    {n:1, c:"deliveries",t:"Studio Floor",k:"F24 Garage"},
+    {n:39,c:"deliveries",t:"Ready For Delivery",k:"Handover"},
+    {n:40,c:"deliveries",t:"Finishing Touch",k:"Handover"}
+  ];
+  var grid = document.getElementById("grid");
+  grid.innerHTML = ITEMS.map(function(it){
+    var f = "assets/img/f24-"+String(it.n).padStart(2,"0")+".jpg";
+    return '<div class="shot" data-cat="'+it.c+'" data-full="'+f+'">'+
+             '<img loading="lazy" src="'+f+'" alt="F24 Auto Care — '+it.t+'">'+
+             '<div class="cap"><b>'+it.k+'</b>'+it.t+'</div>'+
+           '</div>';
+  }).join("");
+  document.querySelectorAll('#waBtn2').forEach(function(a){a.href="https://wa.me/"+F24.wa+"?text="+encodeURIComponent(F24.waMsg);a.target="_blank";a.rel="noopener";});
+</script>
+</body>
+</html>
